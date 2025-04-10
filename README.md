@@ -45,10 +45,10 @@
 ## 📁 File Structure
 
 BALLOON-GAME/
-├── Graphics/              # Contains images or balloon/letter assets
-├── index.html             # Main HTML file
-├── script.js              # JavaScript logic
-└── style.css              # Styling file
+   ├── Graphics/
+   ├── index.html
+   ├── script.js
+   └── style.css
 
 
 
