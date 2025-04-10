@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #cdeeff;
+    background-image: url('Graphics/Symbol 3 copy.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+  }
+  
+ 
+
+  .pumplogo {
+    position: fixed; /* stays in place even when scrolling */
+    bottom: 10px;
+    right: 35px;
+    width: 15%; /* adjust as needed */
+    height: auto;
+    z-index: 1000; /* ensures it appears above other elements */
+  }
+
+  .pumphandle{
+    position: fixed; /* stays in place even when scrolling */
+    bottom: 25px;
+    right: 160px;
+    width: 17%; /* adjust as needed */
+    height: auto;
+  }
+
+  .presshandle{
+    position: fixed; /* stays in place even when scrolling */
+    bottom: 20%;
+    right: 30px;
+    width: 16%; /* adjust as needed */
+    height: auto;
+    transition: bottom 0.2s ease;
+  }
+
+  .balloon {
+    position: fixed;
+    bottom: 30%;
+    right: 334px;
+    transform: translateX(-50%);
+    width: 22px;
+    transition: all 0.3s ease;
+    z-index: -1; /* ensures it appears below other elements */
+    /* animation: floatRandom 5s ease-in-out; */
+  }
+
+  .letter {
+    position: fixed;
+    transition: all 0.3s ease;
+    z-index: -1;
+    
+  }
+  
+  @keyframes floatUpLeft {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-500px, -300px); } /* ← left, ↑ up */
+  }
+  
+
+  @keyframes pop {
+    0%   { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+  }
